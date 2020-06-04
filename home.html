@@ -1,0 +1,220 @@
+<html>
+
+<style style="text/css">
+
+.button {
+  background-color: white;
+  border: none;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: 1px 1px 15px;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family:verdana;
+}
+
+ul {
+  z-index: 10;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #333;
+  padding: 0px;
+  margin: 0px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  z-index: 10;
+  display: block;
+  color: white;
+  text-align: center;
+  margin: 0px;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  z-index: 10;
+  background-color: #111;
+}
+
+.active {
+  z-index: 10;
+  background-color: #080808;
+}
+
+.cover-image {
+  background-image: url("cover_image3.jpg");
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 5px 5px 15px;
+  z-index: 20;
+}
+
+.cover-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family:verdana;
+  text-shadow: 1px 1px 5px black;
+  line-height: 20px;
+}
+
+.games-img{
+  background-image: url(background_image_ice.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 5;
+  padding: 0px;
+  margin: 0px;
+}
+
+.about-img{
+  background-image: url(cover_image4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 5;
+  padding: 0px;
+  margin: 0px;
+}
+
+.column {
+  float: left;
+  width: 50%; 
+  text-align: center;
+}
+
+/* Clear floats after image containers */
+.row {
+  display: table;
+}
+
+.column img { 
+  transition: all .4s ease-in-out;
+  border-radius: 10%;
+  box-shadow: 5px 5px 15px;
+}
+
+.column img:hover{
+  border-radius: 0%;
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 5px 5px 15px;
+}
+
+.about-back{
+  width: 100%;
+  height: 500px;
+  background-color: #222;
+  box-shadow: 5px 5px 15px;
+  margin:auto;
+}
+
+.contact-back{
+  width: 100%;
+  height: 350px;
+  background-color: #222;
+  box-shadow: -1px -1px 15px;
+  margin:auto;
+}
+</style>
+
+
+<head>
+<title>James Harford</title>
+<link rel="icon" href="icon_transparent.png" sizes="16x16">
+</head>
+
+
+<body>
+
+<a id="home"></a>
+
+<div class="cover-image"></div>
+  <div class="cover-text">
+    <h1 style = "font-size: 80px">James Harford</h1>
+    <h3>Game Developer</h3>
+    <h4><button class="button" onclick = "document.location = 'about.html'"><b style="color: #222">About</b></button></h4>
+  </div>
+
+<a id="about"></a>
+<div class="games-img">
+<ul>
+  <li><a class="active nav-bar" href="#home">Home</a></li>
+  <li><a href="#about" class="nav-bar">About</a></li>
+  <li><a href="#games" class="nav-bar">Games</a></li>
+  <li><a href="#contact" class="nav-bar">Contact</a></li>
+</ul>
+
+<div class="about-back">
+<div style="float: right; padding-right: 10%; padding-top: 10%; margin-left: 5%"><img src="about_img.jpg" style="width: 300px; box-shadow: 5px 5px 15px;"></div>
+<h1 style="font-size: 65px; color: #ebf3f7; text-shadow: 1px 1px 5px black; padding-top: 5%; margin: 0px; margin-left: 10%">About me.</h1>
+<p style=" color: #ebf3f7; display: inline-block; margin-left: 10%; width: 50%;">Hi, my name is James and I am a game developer. I am a paragraph and this is a really cool website. I am a paragraph and this is a really cool website. I am a paragraph and this is a really cool website. I am a paragraph and this is a really cool website. I am a paragraph and this is a really cool website. I am a paragraph and this is a really cool website.</p>
+</div>
+
+
+<a id="games"></a>
+<center><h1 style="font-size: 65px; line-height: 10px; color: #ebf3f7; padding-top: 25px; text-shadow: 1px 1px 5px black;">My Games</h1></center>
+<br>
+<div class="row">
+  <div class="column">
+	<div class "games-grid"><img src="slide_2.jpg" style="width:85%"></div>
+	<center><h1 style="font-size: 40px; line-height: 10px; color: #ebf3f7; text-shadow: 1px 1px 5px black;">Cyberpunk</h1></center>
+  </div>
+  <div class="column">
+	<div class "games-grid"><img src="slide_1.jpg" style="width:85%"></div>
+		<center><h1 style="font-size: 40px; line-height: 10px; color: #ebf3f7; text-shadow: 1px 1px 5px black;">Resident Evil</h1></center>
+  </div>
+</div>
+
+<br><br>
+
+<h3>Any suggestions on games we should cover email us <a href = "mailto: pcworld@gmail.com?body=Hi James,"><b><u<i>here</i></u></b></a>.</h3>
+
+<a id="contact"></a>
+<div class="contact-back">
+  
+</div>
+</div>
+
+<script>
+// Add active class to the current button (highlight it)
+var navbtns = document.getElementsByClassName("nav-bar");
+console.log(navbtns);
+for (var i = 0; i < navbtns.length; i++) {
+  navbtns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  console.log(current);
+  current[0].className = current[0].className.replace("active", "li");
+  this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
